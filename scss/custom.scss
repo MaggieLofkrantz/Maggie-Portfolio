@@ -177,9 +177,15 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 
 #rectangle {
     height: auto;
-    max: width 100%; 
+    max-width:  100%; 
     padding-top: 70%;
+    object-fit: contain;
 }
 
+
+.decor h1{
+    padding-top: 10rem;
+    font-size: 12rem;
+}
 // about me page 
  
