@@ -10,8 +10,8 @@
     --font-size-md: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
     --font-size-lg: clamp(1.56rem, 0.79vw + 1.36rem, 2rem);
     --font-size-xl: clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem);
-    --font-size-xxl: clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem);
-    --font-size-xxxl: clamp(3.05rem, 3.06vw + 3.29rem, 4.73rem);
+    --font-size-xxl: clamp(6.44rem, 2.02vw + 1.94rem, 3.55rem);
+    --font-size-xxxl: clamp(8.05rem, 3.06vw + 3.29rem, 4.73rem);
 }
 // Option A: Include all of Bootstrap
     
@@ -19,7 +19,7 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-$font-family-base: 'Josefin Sans', sans-serif;
+$font-family-base: 'Archivo', sans-serif;
 
 $primary: #000000;
 $secondary: #FFFFFF;
@@ -44,14 +44,19 @@ $grid-row-columns: 3;
 $btn-link-color: $secondary;
 $btn-light-color: $secondary;
 
-
+$carousel-transition-duration:       .2s;
 
 
 
 // Then add additional custom code here
+body {
+    font-family: 'Archivo', sans-serif;
+}
+
 nav.navbar {
     background-color: $primary !important;
     color: $secondary;
+    font-family: 'Archivo', sans-serif;
 }
 
 .navbar-brand {
@@ -105,4 +110,76 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
     transform: translateY(0px);
 }
 
+.intro h1 {
+    font-family: 'Archivo', sans-serif;
+    padding-left: 4rem; 
+   padding-top: 18rem;
+   font-stretch:ultra-expanded;
+   font-size: 4rem;
+   font-weight: bold; 
+}
+  
 
+
+.intro h5 {
+    padding-left: 4rem; 
+    padding-top: 3rem; 
+    font: size 50%; 
+}
+
+.intro{
+    padding-bottom: 20%;
+}
+
+.carousel-item img {
+  margin: auto;
+  max-width: 100%;
+}
+
+.carousel-item, #tulipfest {
+    padding-top: 3rem;
+    height: auto;
+}
+.carousel-caption {
+    position:relative;
+    left: 0;
+    top: 0;
+    color: #000000;
+    width: 50%;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+.carousel-caption h1 {
+    font-stretch:ultra-expanded;
+   font-size: 3rem;
+   font-weight:bolder;
+   font-family: 'Archivo', sans-serif;
+   padding-bottom: 2rem;
+   
+}
+
+.carousel-caption button {
+    background-color: #FFF;
+    border-radius: 5%;
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    border: 1.5px solid black;
+}
+
+.carousel-caption button:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    transition-duration: 2s;
+}
+
+#rectangle {
+    height: auto;
+    max: width 100%; 
+    padding-top: 70%;
+}
+
+// about me page 
+ 
